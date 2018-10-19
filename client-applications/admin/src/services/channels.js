@@ -8,12 +8,11 @@ export class ChannelsService {
   }
 
   getChannels() {
-    // return this.http.get('/channels').then(result => {
-    //   return result.channels.map(item => {
-    //     return new Channel(item);
-    //   });
-    // });
-    return () => { return [{partner_public_key:'12345 67890 abc', is_active:true, sent: 200, received:100250.32}] }
+    return this.http.get('/channels').then(result => {
+      return result.channels.map(item => {
+        return new Channel(item);
+      });
+    });
   }
   connectChannel(channel) {
     let body = {

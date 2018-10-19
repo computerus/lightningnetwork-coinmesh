@@ -8,14 +8,11 @@ export class PeersService {
   }
 
   getPeers() {
-    // return this.http.get('/peers').then(result => {
-    //   return result.peers.map(item => {
-    //     return new Peer(item);
-    //   });
-    // });
-    return () => {return [{public_key:123456789000, 
-      network_address:'127.000.000.001',
-      tokens_received:120}]}
+    return this.http.get('/peers').then(result => {
+      return result.peers.map(item => {
+        return new Peer(item);
+      });
+    });
   }
   connectPeer(peer) {
     return this.http.post('/peers', peer).then(result => {
