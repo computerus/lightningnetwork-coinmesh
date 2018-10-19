@@ -1,0 +1,34 @@
+{
+  "name": "@coinmesh/lnd-wallet",
+  "version": "0.1.0",
+  "scripts": {
+    "prestart": "npm install && npm rebuild",
+    "start": "nodemon ./bin/www",
+    "test": "nodemon --exec 'jasmine'"
+  },
+  "dependencies": {
+    "@coinmesh/lnd-adapter": "^0.1.5",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "express": "~4.15.5",
+    "jasmine": "^3.2.0",
+    "nodemon": "^1.18.3",
+    "supertest": "^3.1.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coinmesh/coinmesh.git"
+  },
+  "keywords": [
+    "coinmesh",
+    "bitcoind"
+  ],
+  "author": "Patrick Walters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coinmesh/coinmesh/issues"
+  },
+  "homepage": "http://coinmesh.com"
+}

@@ -1,0 +1,97 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\nikola.jovanovic\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\nikola.jovanovic\bin;C:\Program Files\Microsoft MPI\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\SourceGear\Common\DiffMerge;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio;C:\Program Files\Microsoft\Web Platform Installer;C:\Program Files\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\DTS\Binn;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\nikola.jovanovic\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn;C:\Program Files (x86)\dotnet;C:\Users\nikola.jovanovic\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\nikola.jovanovic\AppData\Local\Programs\Fiddler;C:\Users\nikola.jovanovic\AppData\Roaming\npm;C:\sqlite;C:\Program Files\SQL Operations Studio\bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.2.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\nikola.jovanovic\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:116426:13)
+      at Interface.emit (events.js:182:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:168:10)
+      at ReadStream.emit (events.js:182:13)
+      at emitKeys (internal/readline.js:422:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1022:36)
+      at ReadStream.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:279:12)
+
+npm manifest: 
+  {
+    "name": "blockfuse-admin",
+    "version": "0.0.1",
+    "description": "An admin panel for managing a BlockFuse stack",
+    "keywords": [
+      "blockfuse",
+      "aurelia",
+      "admin"
+    ],
+    "homepage": "http://blockfuse.io",
+    "license": "CC0-1.0",
+    "author": "Patrick Walters <patrick.walters@blockfuse.io> (http://blockfuse.io/)",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/aurelia/skeleton-navigation"
+    },
+    "scripts": {
+      "start": "npm install && gulp watch",
+      "test": "gulp test",
+      "e2e": "gulp serve webdriver-standalone e2e",
+      "postinstall": "./node_modules/.bin/jspm install"
+    },
+    "jspm": {
+      "dependencies": {
+        "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0",
+        "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
+        "aurelia-framework": "npm:aurelia-framework@^1.0.0",
+        "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0",
+        "aurelia-http-client": "npm:aurelia-http-client@^1.2.1",
+        "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0",
+        "aurelia-logging-console": "npm:aurelia-logging-console@^1.0.0",
+        "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0",
+        "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0",
+        "aurelia-router": "npm:aurelia-router@^1.0.0",
+        "aurelia-templating": "npm:aurelia-templating@^1.7.0",
+        "aurelia-templating-binding": "npm:aurelia-templating-binding@^1.0.0",
+        "aurelia-templating-resources": "npm:aurelia-templating-resources@^1.0.0",
+        "aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0",
+        "bluebird": "npm:bluebird@3.4.1",
+        "bootstrap": "npm:bootstrap@^4.0.0",
+        "fetch": "github:github/fetch@^1.0.0",
+        "font-awesome": "npm:font-awesome@4.6.3",
+        "jquery": "npm:jquery@^2.2.4",
+        "json": "github:systemjs/plugin-json@^0.3.0",
+        "text": "github:systemjs/plugin-text@^0.0.8"
+      },
+      "devDependencies": {}
+    },
+    "dependencies": {
+      "@coinmesh/client-build-tools": "^0.0.5",
+      "github": "^14.0.0",
+      "gulp": "^3.9.1",
+      "jspm": "^0.16.53",
+      "jspm-git": "^0.6.1",
+      "npm": "^6.4.1"
+    },
+    "devDependencies": {
+      "electron": "^3.0.3",
+      "require-dir": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

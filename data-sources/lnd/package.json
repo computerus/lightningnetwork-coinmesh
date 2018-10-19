@@ -1,0 +1,41 @@
+{
+  "name": "@coinmesh/lnd",
+  "version": "0.5.1",
+  "description": "LND data source for CoinMesh.",
+  "main": "index.js",
+  "coinmesh": {
+    "type": "data-source",
+    "confFilePath": "lnd.conf",
+    "adapters": {
+      "lnd-adapter": "adapters/lnd-adapter"
+    },
+    "network": "testnet",
+    "runHttp": true,
+    "conf": {
+      "debuglevel": "debug",
+      "bitcoin.active": "1",
+      "bitcoin.regtest": "1",
+      "bitcoind.rpcuser": "rpcuser",
+      "bitcoind.rpcpass": "rpcpassword"
+    }
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coinmesh/coinmesh.git"
+  },
+  "keywords": [
+    "coinmesh",
+    "lnd",
+    "bitcoind",
+    "bitcoin"
+  ],
+  "author": "Patrick Walters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coinmesh/coinmesh/issues"
+  },
+  "homepage": "https://coinmesh.com"
+}

@@ -1,0 +1,7 @@
+<template>
+    <require from="./channel-details"></require>
+    <require from="./channel-details"></require>
+    <div repeat.for="channel of channels" style="margin:20px 0; padding: 7px; border:1px solid black;">
+        <channel-details channel.bind="channel"></channel-details>
+    </div>
+</template>

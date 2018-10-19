@@ -1,0 +1,21 @@
+<template>
+    <div class="row">
+        <div class="col-4">Public Key: ${peer.public_key}</div>
+        <div class="col-4">Network Address: ${peer.network_address}</div>
+        <div class="col-4">Socket: ${peer.socket}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Tokens Sent: ${peer.tokens_sent}</div>
+        <div class="col-3">Tokens Received: ${peer.tokens_received}</div>
+        <div class="col-3">Bytes Sent: ${peer.bytes_sent}</div>
+        <div class="col-3">Ping Time: ${peer.ping_time}</div>
+    </div>
+    <div class="row" style="margin-top:12px;">
+        <div>
+            <button class="btn btn-info btn-sm" click.delegate="connect()" show.bind="!peer.is_inbound">Connect</button>
+        </div>
+        <div>
+            <button class="btn btn-light btn-sm" click.delegate="disconnect()" show.bind="peer.is_inbound">Disconnect</button>
+        </div>
+    </div>
+</template>

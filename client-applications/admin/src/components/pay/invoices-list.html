@@ -1,0 +1,8 @@
+<template>
+    <h2>Invoices</h2>
+    <div repeat.for="invoice of invoicesList" style="border: 1px solid black; margin-top: 15px;">
+        to do
+        <button click.delegate="pay(invoice)">Pay</button>
+    </div>
+    <div show.bind="invoicesList.length === 0">no Invoices found</div>
+</template>

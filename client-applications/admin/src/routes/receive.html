@@ -1,0 +1,23 @@
+<template>
+  <section>
+    <require from="components/receive/create-invoice"></require>
+    <div class="row">
+      <div class="col">
+        <create-invoice></create-invoice>
+      </div>
+    </div>
+    <require from="components/receive/addresses-list"></require>
+    <div class="row">
+      <div class="col">
+        <addresses-list addresses.bind="addresses"></addresses-list>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-secondary" click.delegate="getNewAddress()">
+          Get new Address
+        </button>
+      </div>
+    </div>
+  </section>
+</template>

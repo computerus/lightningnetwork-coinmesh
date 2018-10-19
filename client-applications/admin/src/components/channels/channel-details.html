@@ -1,0 +1,28 @@
+<template>
+    <div class="row" style="background-color: aqua; border: 1px solid black;">
+        <div class="col-6">Partner Public Key: ${channel.partner_public_key}</div>
+        <div class="col-4"><b>
+            ${channel.is_active == true ? 'Active' : ''}
+            ${channel.is_opening == true ? 'Opening' : ''}
+            ${channel.is_closing == true ? 'Closing' : ''}</b>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-light btn-sm" click.delegate="closeChannel()" disabled.bind="channel.is_closing">Close</button>
+        </div>
+    </div>    
+    <div class="row">
+            <div class="col-4">Transfers Count: ${channel.transfers_count}</div>
+            <div class="col-4">Sent: ${channel.sent}</div>
+            <div class="col-4">Received: ${channel.received}</div>
+        </div>
+    <div class="row">
+        <div class="col-4">Remote: ${channel.remote_balance}</div>
+        <div class="col-4">Local: ${channel.local_balance}</div>
+        <div class="col-4">Unsettled: ${channel.unsettled_balance}</div>
+    </div>
+    <div class="row">
+        <div class="col-4">Capacity: ${channel.capacity}</div>
+        <div class="col-4">Commit Transaction Fee: ${channel.commit_transaction_fee}</div>
+        <div class="col-4">Commit Transaction Weight: ${channel.commit_transaction_weight}</div>
+    </div>
+    </template>

@@ -1,0 +1,32 @@
+<template>
+  <h2>Create Invoice</h2>
+  <form>
+    <div class="form-group">
+      <label for="tokens">Tokens</label>
+      <input id="tokens" value.bind="invoice.tokens" class="form-control" placeholder="Number of tokens in satoshis">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input id="description" value.bind="invoice.description" class="form-control" placeholder="Description of the invoice">
+    </div>
+    <div class="form-group">
+      <label for="internal_description">Internal Description</label>
+      <input id="internal_description" value.bind="invoice.internal_description" class="form-control" placeholder="Description to use internally">
+    </div>
+    <div class="form-group">
+      <label for="secret">Secret</label>
+      <input id="secret" value.bind="invoice.secret" class="form-control" placeholder="Secret">
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <label><input type="checkbox" class="checkbox" checked.bind="invoice.is_fallback_included"> Include Fallback</label>
+      </div>
+      <div class="col-4">
+        <label><input type="checkbox" checked.bind="invoice.is_fallback_nested"> Nested Fallback</label>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-info" click.delegate="createInvoice()">Create Invoice</button>
+      </div>
+    </div>
+  </form>
+</template>

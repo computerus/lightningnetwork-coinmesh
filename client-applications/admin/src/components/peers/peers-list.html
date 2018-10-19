@@ -1,0 +1,6 @@
+<template>
+    <require from="./peer-details"></require>
+    <div repeat.for="peer of peers" style="margin:20px 0; padding: 7px; border:1px solid black;">
+        <peer-details peer.bind="peer"></peer-details>
+    </div>
+</template>

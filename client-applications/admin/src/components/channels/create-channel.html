@@ -1,0 +1,35 @@
+<template>
+    <section>
+        <button class="btn btn-info" click.delegate="expand()" show.bind="!isExpanded">New Channel</button>
+        <div show.bind="isExpanded" style="margin-bottom:30px;">
+            <form>
+                <div class="row">
+                    <div class="form-group col-6">
+                      <label for="partnerPublicKey">Public key of peer node</label>
+                      <input id="partnerPublicKey" value.bind="partner"
+                        class="form-control">
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="localTokens">Number of tokens to fund channel with</label>
+                      <input id="localTokens" value.bind="local"
+                        class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                      <label for="giveTokens">Number of tokens to gift to peer</label>
+                      <input id="giveTokens" value.bind="give"
+                        class="form-control">
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="fee">Chain Fee Tokens Per VByte Number</label>
+                      <input id="fee" value.bind="fee"
+                        class="form-control">
+                    </div>
+                    <button class="btn btn-info" click.delegate="openChannel()">Open Channel</button>
+                    <button class="btn btn-info btn-light" click.delegate="cancelChannel()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</template>

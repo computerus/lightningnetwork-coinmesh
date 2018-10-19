@@ -1,0 +1,20 @@
+<template>
+    <h2>Chain Transactions</h2>
+    <div repeat.for="transaction of chainTransactions" style="border: 1px solid black; margin-top: 15px;">
+        <div class="row">
+            <div class="col-4">Tokens: ${transaction.tokens}</div>
+            <div class="col-4">Fee: ${transaction.fee}</div>
+            <div class="col-4">Created At: ${transaction.created_at}</div>
+        </div>
+        <div class="row">
+            <div class="col-4">Block Id: ${transaction.block_id}</div>
+            <div class="col-4">Confirmation Count: ${transaction.confirmation_count}</div>
+            <div class="col-4">Confirmation Height: ${transaction.confirmation_height}</div>
+        </div>
+        <div class="row">
+            <div class="col-4">Output Address: ${transaction.output_addresses}</div>
+            <div class="col-4">${transaction.is_outgoing ? 'Outgoing':''}</div>
+            <div class="col-4"><b>${transaction.is_confirmed ? 'Confirmed':''}</b></div>
+        </div>
+    </div>
+    </template>
